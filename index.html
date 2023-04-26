@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Students</title>
+</head>
+
+<body>
+  <div id="leftside">
+    <button id="add-students">
+      Добавить студента
+    </button>
+    <h4>Точечный поиск:</h4>
+    <ul id="filter-list">
+      <li><input type="text" id="input-search-name" class="filter__students filter__students-first" placeholder="ФИО"/></li>
+      <li><input type="text" id="input-search-faculty" class="filter__students" placeholder="Факультет"/></li>
+      <li><input type="text" id="input-search-startLearn" class="filter__students" placeholder="Год начала обучения"/></li>
+      <li><input type="text" id="input-search-endLearn" class="filter__students" placeholder="Год окончания обучения"/></li>
+    </ul>
+  </div>
+  <form id="form__add-students">
+    <h3>Форма добавления студента</h3>
+    <div class="form__list-items">
+      <label>Имя</label>
+      <input id="form__label-name" required type="text">
+    </div>
+    <div class="form__list-items">
+      <label>Фамилия</label>
+      <input id="form__label-Mname" required type="text">
+    </div>
+    <div class="form__list-items">
+      <label>Отчество</label>
+      <input id="form__label-Lname" required type="text">
+    </div>
+    <div class="form__list-items">
+      <label>Дата рождения</label>
+      <input required id="form__birthday" type="date" min="1900-01-01">
+    </div>
+    <div class="form__list-items">
+      <label>Год начала обучения</label>
+      <input required id="form__year-start" type="date" min="2000-01-01">
+    </div>
+    <div class="form__list-items">
+      <label>Факультет</label>
+      <input id="form__facultet" required type="text">
+    </div>
+    <div>
+      <button disabled type="button" id="form__btn-add">Добавить студента</button>
+    </div>
+  </form>
+  <table id="table">
+    <thead>
+      <tr>
+        <th><button id="btn-1" class="table__btns">№</button></th>
+        <th><button id="btn-2" class="table__btns">ФИО студента</button></th>
+        <th><button id="btn-3" class="table__btns">Факультет</button></th>
+        <th><button id="btn-4" class="table__btns">Дата рождения</button></th>
+        <th><button id="btn-5" class="table__btns">Год обучения и курс</button></th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>

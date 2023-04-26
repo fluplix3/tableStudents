@@ -1,0 +1,115 @@
+* {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#leftside {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__students {
+  width: 150px;
+  height: 6px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.filter__students-first {
+  margin-top: 0;
+}
+
+h4 {
+  padding-bottom: 5px;
+}
+
+#add-students {
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: aqua;
+  border: 0;
+  font-size: 16px;
+  margin-top: 40px;
+  width: 200px;
+  height: 75px;
+}
+
+#add__students:hover {
+  background-color: rgb(102, 241, 241);
+}
+
+#tbody {
+  vertical-align: baseline;
+}
+
+.table__btns {
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#form__add-students {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  height: 650px;
+  width: 500px;
+  background-color: rgb(97, 97, 97);
+  top: 0;
+  margin-top: 100px;
+  display: none;
+}
+
+#form__add-students>h3 {
+  padding: 0;
+}
+
+#form__add-students>div {
+  padding: 5px;
+}
+
+.form__list-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__list-items>label,
+.form__list-items>input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.form__list-items>input {
+  padding: 10px;
+}
+
+#form__btn-add {
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
